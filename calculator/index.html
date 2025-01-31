@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="./js/numbers.js"></script>
+    <script src="./js/operations.js"></script>
+    <style>
+        body {
+            background-color: olive;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+        }
+        button {
+            font-size: 24px;
+            padding: 15px 30px;
+            border: 2px solid #ff6f61; 
+            background-color: #ffb6b9; 
+            color: #fff; 
+            margin: 10px;
+            width: 70px;
+            height: 70px;
+            border-radius: 15px; 
+            cursor: pointer;
+            transition: all 0.3s ease; 
+        }
+    
+        
+        button:hover {
+            background-color: #ff6f61; 
+            transform: scale(1.1); 
+        }
+    
+        
+        input[type="text"] {
+            font-size: 24px;
+            padding: 15px;
+            width: 320px;
+            margin: 15px 0;
+            border: 2px solid #ff6f61; 
+            border-radius: 10px; 
+            background-color: #fff0f0; 
+            color: #ff6f61; 
+            text-align: right; 
+        }
+    
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #ffb6b9; 
+            box-shadow: 0 0 10px rgba(255, 111, 97, 0.5); 
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <form name="calculator">
+        <input type="text" id="display" value="0" readonly>
+        <br><br>
+        <input type="text" id="display2" readonly style="display: none;">
+        <input type="text" id="operator">
+        <br><br>
+        <button type="button" onclick="seven()">7</button>
+        <button type="button" onclick="eight()">8</button>
+        <button type="button" onclick="nine()">9</button>
+        <button type="button" onclick="plus()">+</button>
+        <br><br>
+        <button type="button" onclick="four()">4</button>
+        <button type="button" onclick="five()">5</button>
+        <button type="button" onclick="six()">6</button>
+        <button type="button" onclick="minus()">-</button>
+        <br><br>
+        <button type="button" onclick="one()">1</button>
+        <button type="button" onclick="two()">2</button>
+        <button type="button" onclick="three()">3</button>
+        <button type="button" onclick="times()">*</button>
+        <br><br>
+        <button type="button" onclick="zero()">0</button>
+        <button type="button" onclick="period()">.</button>
+        <button type="button" onclick="equals()">=</button>
+        <button type="button" onclick="divide()">/</button>
+        <br><br>
+    </form>
+</body>
+</html>
